@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# other(额外添加)
+*.pyc
+*.swp
+*.sqllite3
+.idea
