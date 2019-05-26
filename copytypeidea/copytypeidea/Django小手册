@@ -1,0 +1,25 @@
+### 根据model生成表【Model => DB】
+
+# 创建数据库迁移文件
+
+python manage.py makemigrations
+
+# 创建表
+
+python manage.py migrate
+
+# 创建admin的管理用户["用户名", "邮箱", "密码"]
+
+python manage.py createsuperuser
+
+### 根据已有数据库生成model模型【DB => Model】
+
+python manage.py inspectdb > (指定路径)/models.py
+
+# 将DB里的表生成的model打印输出在控制台
+
+python manage.py inspectdb
+
+# 生成app
+
+python manage.py startapp appName

@@ -29,8 +29,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+# 此处安装的app顺序很重要
 
 INSTALLED_APPS = [
+    'blog',
+    'config',
+    'comment',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
